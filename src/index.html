@@ -39,7 +39,24 @@
 	<script type="text/javascript" src="assets/js/functions.js"></script>
 <script type="text/javascript" src="assets/js/modernizr.custom.46884.js"></script>
 <script type="text/javascript" src="assets/js/jquery.slicebox.js"></script>
-<script type="text/javascript">
+<script>
+$('#time_countdown').countDown({
+
+         targetDate: {
+            'day':      01,
+            'month':    09,
+            'year':     2017,
+            'hour':     0,
+            'min':      0,
+            'sec':      0
+        },
+        omitWeeks: true  
+        
+        });
+
+</script>
+  <script type="text/javascript">
+  
 			$(function() {
 				
 				var Page = (function() {

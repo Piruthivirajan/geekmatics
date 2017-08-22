@@ -68,14 +68,15 @@ jQuery(document).ready(function($) {
         // omitWeeks: true
 
          targetDate: {
-            'day':      01,
-            'month':    09,
+            'day':      31,
+            'month':    08,
             'year':     2017,
-            'hour':     01,
+            'hour':     12,
             'min':      0,
             'sec':      0
         },
         omitWeeks: true
+       
         
         });
 

@@ -68,10 +68,10 @@ jQuery(document).ready(function($) {
         // omitWeeks: true
 
          targetDate: {
-            'day':      31,
-            'month':    08,
+            'day':      01,
+            'month':    09,
             'year':     2017,
-            'hour':     12,
+            'hour':     0,
             'min':      0,
             'sec':      0
         },

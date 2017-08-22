@@ -25,7 +25,7 @@ export class UserComponent {
 submitForm(value:any){
  if("check"==value.name && "check"==value.password){
  this.router.navigateByUrl('/report');
- }
+ }else{alert("Enter correct Username & Password");}
 }
 goto(){
   this.router.navigateByUrl('/');

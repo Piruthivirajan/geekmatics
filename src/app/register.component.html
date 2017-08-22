@@ -29,7 +29,7 @@
 	<label  class="form-control" >Name of the collge</label>
 	</div>
 <div class="col-sm-6">
-<select (change)="changeShape($event.target)" style="color:black">
+<select [(ngModel)]="defaultValue" (change)="changeShape($event.target)" style="color:black">
 	       <option value="0">--Select--</option>                                         
 	        <option value=" Adithya Institute of Technology (AIT), Coimbatore"> Adithya Institute of Technology (AIT), Coimbatore</option>
 			<option value=" Amrita School of Engineering (ASE), Coimbatore"> Amrita School of Engineering (ASE), Coimbatore</option>

@@ -15,7 +15,8 @@ export class RegisterComponent {
 che:boolean=false;
   other:boolean=false;
   newclg:string="";
-
+defaultValue:string='0';
+  
   junkc:boolean=false;
  trixc:boolean=false;
  facec:boolean=false;
@@ -120,7 +121,8 @@ tajunkemail1:string="";
    return true;
   }
   check(){
-debugger;
+ if(this.newclg=="") {alert("Enter Your college name");return;}
+    
                     if(this.junkc){
                      
                       if(this.newclg=="" || this.junkpname1=="" ||  this.junkdept1=="" || this.junkemail1=="")
@@ -356,12 +358,108 @@ if(this.tangoc){
                                 
                               }
   alert("Successfully Register");
- window.location.reload();
+    this.reset();
+ //window.location.reload();
 
 
   }
   changeShape(shape){
-  if(shape.value=="Others") {this.other=true;}
+  if(shape.value=="Others") {this.other=true;this.newclg="";}
   else {this.other=false;this.newclg=shape.value;}
+}
+  
+reset(){
+  this.other=false;
+  this.newclg="";
+
+ this.junkc=false;
+ this.trixc=false;
+ this.facec=false;
+ this.geekadzc=false;
+ this.zorroc=false;
+ this.quizc=false;
+ this.meshc=false;
+ this.tangoc=false;
+ //junk
+ this.junkpname1="";
+ this.junkdept1="";
+ this.junkcontact1=null;
+ this.junkemail1="";
+
+this.junkpname2="";
+ this.junkdept2="";
+ this.junkcontact2=null;
+ this.junkemail2="";
+//trix
+ this.tjunkpname1="";
+ this.tjunkdept1="";
+ this.tjunkcontact1=null;
+ this.tjunkemail1="";
+
+ this.tjunkpname2="";
+ this.tjunkdept2="";
+ this.tjunkcontact2=null;
+ this.tjunkemail2="";
+//face
+this.fjunkpname1="";
+ this.fjunkdept1="";
+ this.fjunkcontact1=null;
+this.fjunkemail1="";
+
+ this.fjunkpname2="";
+this.fjunkdept2="";
+this.fjunkcontact2=null;
+this.fjunkemail2="";
+//adv
+this.ajunkpname1="";
+ this.ajunkdept1="";
+ this.ajunkcontact1=null;
+ this.ajunkemail1="";
+
+ this.ajunkpname2="";
+ this.ajunkdept2="";
+ this.ajunkcontact2=null;
+ this.ajunkemail2="";
+ //zorro
+ this.zjunkpname1="";
+ this.zjunkdept1="";
+ this.zjunkcontact1=null;
+ this.zjunkemail1="";
+
+ this.zjunkpname2="";
+this.zjunkdept2="";
+ this.zjunkcontact2=null;
+ this.zjunkemail2="";
+ //Quicz
+ this.qjunkpname1="";
+ this.qjunkdept1="";
+this.qjunkcontact1=null;
+ this.qjunkemail1="";
+
+ this.qjunkpname2="";
+  this.qjunkdept2="";
+ this.qjunkcontact2=null;
+ this.qjunkemail2="";
+ //mesh
+ this.mjunkpname1="";
+ this.mjunkdept1="";
+ this.mjunkcontact1=null;
+ this.mjunkemail1="";
+
+ this.mjunkpname2="";
+ this.mjunkdept2="";
+ this.mjunkcontact2=null;
+ this.mjunkemail2="";
+//Tango
+this.tajunkpname1="";
+this.tajunkdept1="";
+ this.tajunkcontact1=null;
+this.tajunkemail1="";
+
+ this.tajunkpname2="";
+ this.tajunkdept2="";
+ this.tajunkcontact2=null;
+ this.tajunkemail2="";
+ this.defaultValue='0'; 
 }
 }

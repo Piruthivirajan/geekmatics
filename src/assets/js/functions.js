@@ -49,12 +49,10 @@ jQuery(document).ready(function($) {
 
 	/* Main Menu End  
 	-------------------------------------------------------------------*/
-
-
-
-
-	/* Time Countdown 
+/* Time Countdown 
 	-------------------------------------------------------------------*/
+
+  $(document).ready(function(){
 	$('#time_countdown').countDown({
       
         // targetOffset: {
@@ -68,8 +66,8 @@ jQuery(document).ready(function($) {
         // omitWeeks: true
 
          targetDate: {
-            'day':      01,
-            'month':    09,
+            'day':      1,
+            'month':    9,
             'year':     2017,
             'hour':     0,
             'min':      0,
@@ -79,7 +77,12 @@ jQuery(document).ready(function($) {
        
         
         });
+  
+});
 
+
+
+	
 
 
 	/* Next Section   
